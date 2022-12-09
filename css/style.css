@@ -1188,7 +1188,6 @@ body {
 
 .swiper-wrapper {
   display: flex;
-  align-items: center;
 }
 
 .others-slider__slide {
@@ -1198,14 +1197,18 @@ body {
 
 .others-slider__image-center {
   position: relative;
-  padding: 0 0 48% 0;
+  padding: 0 0 42% 0;
   width: 100%;
   overflow: hidden;
-  align-self: center;
 }
 @media (max-width: 1199.98px) {
   .others-slider__image-center {
     margin-bottom: 30px;
+  }
+}
+@media (max-width: 767.98px) {
+  .others-slider__image-center {
+    padding-bottom: 100%;
   }
 }
 .others-slider__image-center img {
@@ -1229,6 +1232,11 @@ body {
   width: 100%;
   overflow: hidden;
 }
+@media (max-width: 767.98px) {
+  .others-slider__image {
+    padding-bottom: 100%;
+  }
+}
 .others-slider__image img {
   position: absolute;
   height: 100%;
@@ -1245,15 +1253,28 @@ body {
 }
 
 .swiper-slide.others-slider__slide.swiper-slide-prev img {
-  height: 406px;
+  min-height: 406px;
+  margin-top: 40px;
+}
+@media (max-width: 767.98px) {
+  .swiper-slide.others-slider__slide.swiper-slide-prev img {
+    margin-top: 0;
+  }
 }
 
 .swiper-slide.others-slider__slide.swiper-slide-active img {
-  height: 500px;
+  min-height: 500px;
 }
 
 .swiper-slide.others-slider__slide.swiper-slide-next img {
-  height: 406px;
+  min-height: 406px;
+  align-self: center;
+  margin-top: 40px;
+}
+@media (max-width: 767.98px) {
+  .swiper-slide.others-slider__slide.swiper-slide-next img {
+    margin-top: 0;
+  }
 }
 
 div.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
@@ -1674,12 +1695,16 @@ div.new-slider_btn-next.swiper-button-next::before {
 }
 
 .page-items__btn {
-  padding: 12px 24px;
   background: #fffbfb;
   border-radius: 8px;
   font-weight: 600;
   color: #1b1b1b;
   transition: 0.5s all ease;
+  width: 126px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .page-items__btn:hover {
   background-color: #ff9505;
@@ -1688,6 +1713,11 @@ div.new-slider_btn-next.swiper-button-next::before {
 }
 .page-items__btn:active {
   background-color: #a5660e;
+}
+@media (max-width: 767.98px) {
+  .page-items__btn {
+    width: 100%;
+  }
 }
 
 .features {

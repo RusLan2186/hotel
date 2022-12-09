@@ -134,7 +134,7 @@ new Swiper('.others-slider', {
    slidesPerView: 1,
    speed: 800,
    spaceBetween: 34,
-   autowidth: true,
+   // autowidth: true,
    pagination: {
       el: '.swiper-pagination',
       clickable: true,
