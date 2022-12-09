@@ -60,6 +60,20 @@ body.lock {
    left: 0;
    object-fit: cover;
 }
+.back {
+   position: fixed;
+   bottom: -50px;
+   right: 50px;
+   transform: rotate(180deg);
+   z-index: 20;
+   cursor: pointer;
+   @media (max-width: 767.98px) {
+      right: 30px;
+   }
+   &.active {
+      bottom: 50px;
+   }
+}
 // .................................................BURGER............................................................................
 
 .header__burger {

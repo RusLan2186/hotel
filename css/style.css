@@ -148,6 +148,23 @@ body {
   line-height: 1.58;
 }
 
+.back {
+  position: fixed;
+  bottom: -50px;
+  right: 50px;
+  transform: rotate(180deg);
+  z-index: 20;
+  cursor: pointer;
+}
+@media (max-width: 767.98px) {
+  .back {
+    right: 30px;
+  }
+}
+.back.active {
+  bottom: 50px;
+}
+
 .header__burger {
   display: none;
 }
